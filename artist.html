@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zmusic</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Music">
+    <meta name="keywords" content="">
+    <meta name="author" content="kamleshyadav">
+    <meta name="MobileOptimized" content="320">
+    <!--Start Style -->
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/swiper/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/nice_select/nice-select.css">
+    <link rel="stylesheet" type="text/css" href="js/plugins/player/volume.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/scroll/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Favicon Link -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+	<!----Loader---->
+	<div class="ms_inner_loader">
+		<div class="ms_loader">
+			<div class="ms_bars">
+				<div class="bar"></div>				
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+		</div>
+	</div>
+    <!----Main Wrapper Start---->
+    <div class="ms_main_wrapper">
+        <!---Side Menu Start--->
+                <!---Side Menu Start--->
+                <div class="ms_sidemenu_wrapper">
+                    <div class="ms_nav_close">
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="ms_sidemenu_inner">
+                      <div class="ms_logo_inner">
+                        <div class="ms_logo">
+                          <a href="index.html">
+                            <img src="images/logo.png" alt="" class="img-fluid"/>
+                          </a>
+                        </div>
+                        <div class="ms_logo_open">
+                          <a href="index.html">
+                            <img src="images/open_logo.png" alt="" class="img-fluid"/>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="ms_nav_wrapper">
+                        <ul>
+                          <li>
+                            <a href="index.html"  title="Discover">
+                              <span class="nav_icon">
+                                <span class="icon icon_discover"></span>
+                              </span>
+                              <span class="nav_text"> صفحه اصلی </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="album.html" title="Albums">
+                              <span class="nav_icon">
+                                <span class="icon icon_albums"></span>
+                              </span>
+                              <span class="nav_text"> آلبوم ها </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="artist.html" title="Artists"  class="active">
+                              <span class="nav_icon">
+                                <span class="icon icon_artists"></span>
+                              </span>
+                              <span class="nav_text"> هنرمند ها </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="genres.html" title="Genres">
+                              <span class="nav_icon">
+                                <span class="icon icon_genres"></span>
+                              </span>
+                              <span class="nav_text"> سبک ها </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" title="Top Tracks">
+                              <span class="nav_icon">
+                                <span class="icon icon_tracks"></span>
+                              </span>
+                              <span class="nav_text"> آهنگ های برتر </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" title="Free Music">
+                              <span class="nav_icon">
+                                <span class="icon icon_music"></span>
+                              </span>
+                              <span class="nav_text"> آهنگ های رایگان </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" title="Stations">
+                              <span class="nav_icon">
+                                <span class="icon icon_station"></span>
+                              </span>
+                              <span class="nav_text"> لیست ها </span>
+                            </a>
+                          </li>
+                        </ul>
+                        <ul class="nav_downloads">
+                          <li>
+                            <a href="#" title="Downloads">
+                              <span class="nav_icon">
+                                <span class="icon icon_download"></span>
+                              </span>
+                              <span class="nav_text"> دانلود ها </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" title="Purchased">
+                              <span class="nav_icon">
+                                <span class="icon icon_purchased"></span>
+                              </span>
+                              <span class="nav_text"> خریداری شده </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" title="Favourites">
+                              <span class="nav_icon">
+                                <span class="icon icon_favourite"></span>
+                              </span>
+                              <span class="nav_text"> مورد علاقه </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" title="History">
+                              <span class="nav_icon">
+                                <span class="icon icon_history"></span>
+                              </span>
+                              <span class="nav_text"> تاریخچه </span>
+                            </a>
+                          </li>
+                        </ul>
+                        <ul class="nav_playlist">
+                          <li>
+                            <a href="#" title="Featured Playlist">
+                              <span class="nav_icon">
+                                <span class="icon icon_fe_playlist"></span>
+                              </span>
+                              <span class="nav_text"> لیست  </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" title="Create Playlist">
+                              <span class="nav_icon">
+                                <span class="icon icon_c_playlist"></span>
+                              </span>
+                              <span class="nav_text"> ایجاد لیست  </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+        <!---Main Content Start--->
+        <div class="ms_content_wrapper">
+            <!---Header--->
+            <div class="ms_header">
+                <div class="ms_top_left">
+                  <div class="ms_top_search">
+                    <input type="text" class="form-control"placeholder="...جستجو کنید" />
+                    <span class="search_icon">
+                      <img src="images/svg/search.svg" alt="" />
+                    </span>
+                  </div>
+                </div>
+                <div class="ms_top_right">
+                  <div class="ms_top_btn">
+                    <a href="javascript:;" class="ms_btn reg_btn" data-toggle="modal" data-target="#myModal" ><span>ثبت نام کنید</span></a>
+                    <a href="javascript:;" class="ms_btn login_btn" data-toggle="modal" data-target="#myModal1" ><span>ورود به سیستم</span></a>
+                  </div>
+                </div>
+              </div> 
+            <!----Top Genres Section Start---->
+                     <!---Featured Artists Music---><br> <br> <br> <br>
+                     <div class="ms_rcnt_slider">
+                      <div class="swiper-container">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="ms_rcnt_box">
+                                <div class="ms_rcnt_box_img">
+                                  <img src="images/album/z12.jpg" alt="" />
+                                  <div class="ms_main_overlay">
+                                    <div class="ms_box_overlay"></div>
+                                    <div class="ms_play_icon">
+                                      <img src="images/svg/play.svg" alt="" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="ms_rcnt_box_text" dir="rtl">
+                                  <h3><a href="#">برگرد</a></h3>
+                                  <p>ملانی و رایسا</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="ms_rcnt_box">
+                                <div class="ms_rcnt_box_img">
+                                  <img src="images/album/z8.jpg" alt="" />
+                                  <div class="ms_main_overlay">
+                                    <div class="ms_box_overlay"></div>
+                                   
+                                    <div class="ms_play_icon">
+                                      <img src="images/svg/play.svg" alt="" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                  <h3><a href="#">اون نیومدش</a></h3>
+                                  <p>شایان اشراقی</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="ms_rcnt_box">
+                                <div class="ms_rcnt_box_img">
+                                  <img src="images/album/z4.jpg" alt="" />
+                                  <div class="ms_main_overlay">
+                                    <div class="ms_box_overlay"></div>
+                                   
+                                    <div class="ms_play_icon">
+                                      <img src="images/svg/play.svg" alt="" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                  <h3><a href="#">لعنت</a></h3>
+                                  <p>باران</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="ms_rcnt_box">
+                                <div class="ms_rcnt_box_img">
+                                  <img src="images/album/z10.jpg" alt="" />
+                                  <div class="ms_main_overlay">
+                                    <div class="ms_box_overlay"></div>
+                                   
+                                    <div class="ms_play_icon">
+                                      <img src="images/svg/play.svg" alt="" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                  <h3><a href="#">تقدیر</a></h3>
+                                  <p>شادمهر عقیلی</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="ms_rcnt_box">
+                                <div class="ms_rcnt_box_img">
+                                  <img src="images/album/z9.jpg" alt="" />
+                                  <div class="ms_main_overlay">
+                                    <div class="ms_box_overlay"></div>
+                                   
+                                    <div class="ms_play_icon">
+                                      <img src="images/svg/play.svg" alt="" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="ms_rcnt_box_text">
+                                  <h3><a href="#">احترام</a></h3>
+                                  <p>امیر تتلو</p>
+                                </div>
+                              </div>
+                            </div>
+                          <div class="swiper-slide">
+                            <div class="ms_rcnt_box">
+                              <div class="ms_rcnt_box_img">
+                                <img src="images/album/z3.jpg" alt="" />
+                                <div class="ms_main_overlay">
+                                  <div class="ms_box_overlay"></div>
+                                 
+                                  <div class="ms_play_icon">
+                                    <img src="images/svg/play.svg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="ms_rcnt_box_text">
+                                <h3><a href="#">پیرهن</a></h3>
+                                <p>محمد لطفی</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="ms_rcnt_box">
+                              <div class="ms_rcnt_box_img">
+                                <img src="images/album/z2.jpg" alt="" />
+                                <div class="ms_main_overlay">
+                                  <div class="ms_box_overlay"></div>
+                                 
+                                  <div class="ms_play_icon">
+                                    <img src="images/svg/play.svg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="ms_rcnt_box_text">
+                                <h3><a href="#">بی احساس</a></h3>
+                                <p>شادمهر عقیلی</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="ms_rcnt_box">
+                              <div class="ms_rcnt_box_img">
+                                <img src="images/album/z1.jpg" alt="" />
+                                <div class="ms_main_overlay">
+                                  <div class="ms_box_overlay"></div>
+                                  <div class="ms_play_icon">
+                                    <img src="images/svg/play.svg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="ms_rcnt_box_text" dir="rtl">
+                                <h3><a href="#">من باهات قهرم</a></h3>
+                                <p>امیر تتلو</p>
+                              </div>
+                            </div>
+                          </div>
+                            <div class="swiper-slide">
+                          <div class="ms_rcnt_box">
+                            <div class="ms_rcnt_box_img">
+                              <img src="images/album/z7.jpg" alt="" />
+                              <div class="ms_main_overlay">
+                                <div class="ms_box_overlay"></div>
+                               
+                                <div class="ms_play_icon">
+                                  <img src="images/svg/play.svg" alt="" />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="ms_rcnt_box_text">
+                              <h3><a href="#">عاشق</a></h3>
+                              <p>سیاوش قمیشی</p>
+                            </div>
+                          </div>
+                        </div>
+                          <div class="swiper-slide">
+                            <div class="ms_rcnt_box">
+                              <div class="ms_rcnt_box_img">
+                                <img src="images/album/z5.jpg" alt="" />
+                                <div class="ms_main_overlay">
+                                  <div class="ms_box_overlay"></div>
+                                 
+                                  <div class="ms_play_icon">
+                                    <img src="images/svg/play.svg" alt="" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="ms_rcnt_box_text">
+                                <h3><a href="#">دل من هواتو کرده</a></h3>
+                                <p>امیر تتلو</p>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                      </div>
+                      <!-- Add Arrows -->
+                      <div class="swiper-button-next slider_nav_next"></div>
+                      <div class="swiper-button-prev slider_nav_prev"></div>
+                  </div>
+                  <!----Top Artist Section---->
+                  <div class="ms_top_artist">
+                      <div class="container-fluid">
+                          <div class="row">
+                              <div class="col-lg-12">
+                                  <div class="ms_heading" dir="rtl">
+                                      <h1>بهترین هنرمندان</h1>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z1.webp" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">شادمهر عقیلی</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z2.jpg" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">امیر تتلو</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z3.jpg" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">شایان اشراقی</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z4.webp" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">شایان یو</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z5.jpg" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">سیاوش قمیشی</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z17.jpg" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">سارن</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                                      <br><br>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z6.webp" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">محسن یگانه</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/8.jpg" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">مسیح و آرش</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z7.jpg" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">معین</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z9.webp" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">علی سورنا</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z11.jfif" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">شایع</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+                              
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z12.jpg" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">مهستی</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                  
+                  
+                  
+       
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z13.jpg" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">فرزاد فرزین</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z10.webp" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">مهیار</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z14.jpg" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">هایده</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z15.jpg" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">لنا</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z16.webp" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">محد لطفی</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box marger_bottom30">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/za22.jpg" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">ادل</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                        
+      
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z23.jpg" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">محسن چاووشی</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z21.jpg" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">اشوان</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+      
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z20.jpg" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">شاهین نجفی</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z19.jpg" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">ابی</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+      
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z18.jfif" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">علیرضا قربانی</a></h3>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-md-6">
+                                  <div class="ms_rcnt_box">
+                                      <div class="ms_rcnt_box_img">
+                                          <img src="images/artist/z22.jfif" alt="" class="img-fluid">
+                                          <div class="ms_main_overlay">
+                                              <div class="ms_box_overlay"></div>
+                                              <div class="ms_play_icon">
+                                                  <img src="images/svg/play.svg" alt="">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="ms_rcnt_box_text">
+                                          <h3><a href="artist_single.html">پیشرو</a></h3>
+                                      </div>
+                                  </div>
+                              </div> <br>
+                          </div>
+                      </div>
+                  </div>
+            <!----Main div close---->
+        </div>
+        <!----Footer Start---->
+ 
+    </div>
+    <div class="col-lg-12">
+      <div class="ms_copyright">
+        <div class="footer_border"></div>
+        <p>
+    
+          <a href="#">Ali Vaezi & Farzad.s</a>
+         
+        </p>
+      </div>
+    </div>
+    <!----Register Modal Start---->
+    <!-- Modal -->
+    <div class="ms_register_popup">
+        <div id="myModal" class="modal  centered-modal" role="dialog">
+            <div class="modal-dialog register_dialog">
+                <!-- Modal content-->
+                <div class="modal-content" dir="rtl">
+                    <button type="button" class="close" data-dismiss="modal">
+						<i class="fa_icon form_close"></i>
+					</button>
+                    <div class="modal-body">
+                        <div class="ms_register_img">
+                            <img src="images/register_img.png" alt="" class="img-fluid" />
+                        </div>
+                        <div class="ms_register_form">
+                            <h2>Z m u s i c</h2>
+                            <div class="form-group" dir="rtl">
+                                <input type="text" placeholder=" نام خود را وارد کنید..." class="form-control">
+                                <span class="form_icon">
+							<i class="fa_icon form-user" aria-hidden="true"></i>
+							</span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder=" ایمیل خود را وارد کنید..." class="form-control">
+                                <span class="form_icon">
+							<i class="fa_icon form-envelope" aria-hidden="true"></i>
+						</span>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder=" رمز خود را وارد کنید..." class="form-control">
+                                <span class="form_icon">
+						<i class="fa_icon form-lock" aria-hidden="true"></i>
+						</span>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder=" رمز خود را تایید کنید..." class="form-control">
+                                <span class="form_icon">
+						<i class=" fa_icon form-lock" aria-hidden="true"></i>
+						</span>
+                            </div>
+                            <a href="#" class="ms_btn">ورود</a><br> <br>
+                            <p>
+                              <a href="#myModal1" data-toggle="modal" class="ms_modal hideCurrentModel ">ثبت نام کنید</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----Login Popup Start---->
+        <div id="myModal1" class="modal  centered-modal" role="dialog">
+            <div class="modal-dialog login_dialog">
+                <!-- Modal content-->
+                <div class="modal-content" dir="rtl">
+                    <button type="button" class="close" data-dismiss="modal">
+						<i class="fa_icon form_close"></i>
+					</button>
+                    <div class="modal-body">
+                        <div class="ms_register_img">
+                            <img src="images/register_img.png" alt="" class="img-fluid" />
+                        </div>
+                        <div class="ms_register_form">
+                          <h2>Z m u s i c</h2>
+                            <div class="form-group">
+                              <input type="text" placeholder=" ایمیل خود را وارد کنید..." class="form-control">
+                              <span class="form_icon">
+            <i class="fa_icon form-envelope" aria-hidden="true"></i>
+          </span>
+                          </div>
+                          <div class="form-group">
+                              <input type="password" placeholder=" رمز خود را وارد کنید..." class="form-control">
+                              <span class="form_icon">
+          <i class="fa_icon form-lock" aria-hidden="true"></i>
+          </span>
+                          </div>
+                            <div class="remember_checkbox">
+                                <label>ذخیره کردن اطلاعات
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+                            </div>
+                            <a href="#" class="ms_btn">وارد شوید</a> <br> <br>
+                            <p class="bk">
+                              <a href="#myModal" data-toggle="modal" class="ms_modal hideCurrentModel ">ثبت نام کنید</a>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----Language Selection Modal---->
+
+	<!----Queue Clear Model ---->
+
+	<!----Queue Save Modal---->
+
+    <!--Main js file Style-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/plugins/swiper/js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/plugins/player/jplayer.playlist.min.js"></script>
+    <script type="text/javascript" src="js/plugins/player/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="js/plugins/player/audio-player.js"></script>
+    <script type="text/javascript" src="js/plugins/player/volume.js"></script>
+    <script type="text/javascript" src="js/plugins/nice_select/jquery.nice-select.min.js"></script>
+	<script type="text/javascript" src="js/plugins/scroll/jquery.mCustomScrollbar.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zmusic</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description" content="Music" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="kamleshyadav" />
+    <meta name="MobileOptimized" content="320" />
+    <!--Start Style -->
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/plugins/swiper/css/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/plugins/nice_select/nice-select.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/plugins/player/volume.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/plugins/scroll/jquery.mCustomScrollbar.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Favicon Link -->
+    <link rel="shortcut icon" type="image/png" href="images/logo.png" />
+  </head>
+  <body>
+    <!----Loader---->
+    <div class="ms_inner_loader">
+      <div class="ms_loader">
+        <div class="ms_bars">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </div>
+    <!----Main Wrapper Start---->
+    <div class="ms_main_wrapper">
+      <!---Side Menu Start--->
+      <!---Side Menu Start--->
+      <div class="ms_sidemenu_wrapper">
+        <div class="ms_nav_close">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+        <div class="ms_sidemenu_inner">
+          <div class="ms_logo_inner">
+            <div class="ms_logo">
+              <a href="index.html">
+                <img src="images/logo.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="ms_logo_open">
+              <a href="index.html">
+                <img src="images/open_logo.png" alt="" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+          <div class="ms_nav_wrapper">
+            <ul>
+              <li>
+                <a href="index.html" title="Discover" class="active">
+                  <span class="nav_icon">
+                    <span class="icon icon_discover"></span>
+                  </span>
+                  <span class="nav_text"> صفحه اصلی </span>
+                </a>
+              </li>
+              <li>
+                <a href="album.html" title="Albums">
+                  <span class="nav_icon">
+                    <span class="icon icon_albums"></span>
+                  </span>
+                  <span class="nav_text"> آلبوم ها </span>
+                </a>
+              </li>
+              <li>
+                <a href="artist.html" title="Artists">
+                  <span class="nav_icon">
+                    <span class="icon icon_artists"></span>
+                  </span>
+                  <span class="nav_text"> هنرمند ها </span>
+                </a>
+              </li>
+              <li>
+                <a href="genres.html" title="Genres">
+                  <span class="nav_icon">
+                    <span class="icon icon_genres"></span>
+                  </span>
+                  <span class="nav_text"> سبک ها </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Top Tracks">
+                  <span class="nav_icon">
+                    <span class="icon icon_tracks"></span>
+                  </span>
+                  <span class="nav_text"> آهنگ های برتر </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Free Music">
+                  <span class="nav_icon">
+                    <span class="icon icon_music"></span>
+                  </span>
+                  <span class="nav_text"> آهنگ های رایگان </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Stations">
+                  <span class="nav_icon">
+                    <span class="icon icon_station"></span>
+                  </span>
+                  <span class="nav_text"> لیست ها </span>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav_downloads">
+              <li>
+                <a href="#" title="Downloads">
+                  <span class="nav_icon">
+                    <span class="icon icon_download"></span>
+                  </span>
+                  <span class="nav_text"> دانلود ها </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Purchased">
+                  <span class="nav_icon">
+                    <span class="icon icon_purchased"></span>
+                  </span>
+                  <span class="nav_text"> خریداری شده </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Favourites">
+                  <span class="nav_icon">
+                    <span class="icon icon_favourite"></span>
+                  </span>
+                  <span class="nav_text"> مورد علاقه </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="History">
+                  <span class="nav_icon">
+                    <span class="icon icon_history"></span>
+                  </span>
+                  <span class="nav_text"> تاریخچه </span>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav_playlist">
+              <li>
+                <a href="#" title="Featured Playlist">
+                  <span class="nav_icon">
+                    <span class="icon icon_fe_playlist"></span>
+                  </span>
+                  <span class="nav_text"> لیست </span>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Create Playlist">
+                  <span class="nav_icon">
+                    <span class="icon icon_c_playlist"></span>
+                  </span>
+                  <span class="nav_text"> ایجاد لیست </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---Main Content Start--->
+    <div class="ms_content_wrapper">
+      <!---Header--->
+      <div class="ms_header">
+        <div class="ms_top_left">
+          <div class="ms_top_search">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="...جستجو کنید"
+            />
+            <span class="search_icon">
+              <img src="images/svg/search.svg" alt="" />
+            </span>
+          </div>
+        </div>
+        <div class="ms_top_right">
+          <div class="ms_top_btn">
+            <a
+              href="javascript:;"
+              class="ms_btn reg_btn"
+              data-toggle="modal"
+              data-target="#myModal"
+              ><span>ثبت نام کنید</span></a
+            >
+            <a
+              href="javascript:;"
+              class="ms_btn login_btn"
+              data-toggle="modal"
+              data-target="#myModal1"
+              ><span>ورود به سیستم</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <div class="ms-banner">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <div class="ms_banner_img">
+                <img src="images/album/z14.jpg" alt="" class="img-fluid" />
+              </div>
+              <div class="ms_banner_text" dir="rtl">
+                <h1>به سایت music خوش آمدید</h1>
+                <h1 class="ms_color">بهترین ها را در اینجا بشنوید !</h1>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است.<br />چاپگرها و متون بلکه روزنامه
+                  و مجله در ستون و سطرآنچنان که لازمکنولوژی مورد نیاز و
+                  کاربردهای است و برای شرایط فعلی ...
+                </p>
+                <div class="ms_banner_btn">
+                  <a href="#" class="ms_btn">اکنون گوش کنید</a>
+                  <a href="#" class="ms_btn">افزودن به لیست</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ms_rcnt_slider">
+        <div class="ms_heading" dir="rtl">
+          <h1>بیشترین پخش شده</h1>
+          <span style="float: left" class="veiw_all"
+            ><a href="#">دیدن همه</a></span
+          >
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z3.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">پیرهن</a></h3>
+                  <p>محمد لطفی</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z2.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">بی احساس</a></h3>
+                  <p>شادمهر عقیلی</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/artist/z18.jfif" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text" dir="rtl">
+                  <h3><a href="#">بوی گیسو </a></h3>
+                  <p>علیرضا قربانی</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z7.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">عاشق</a></h3>
+                  <p>سیاوش قمیشی</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z8.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">اون نیومدش</a></h3>
+                  <p>شایان اشراقی</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z11.jfif" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">درد</a></h3>
+                  <p>سارن</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z4.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">لعنت</a></h3>
+                  <p>باران</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z10.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">تقدیر</a></h3>
+                  <p>شادمهر عقیلی</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z9.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">احترام</a></h3>
+                  <p>امیر تتلو</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z5.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">دل من هواتو کرده</a></h3>
+                  <p>امیر تتلو</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next slider_nav_next"></div>
+        <div class="swiper-button-prev slider_nav_prev"></div>
+      </div>
+
+      <!---Weekly Top 15--->
+      <div class="ms_weekly_wrapper">
+        <div class="ms_weekly_inner">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="ms_heading" dir="rtl">
+                <h1>15 آهنگ خارجی برتر هفته</h1>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 padding_right40">
+              <div class="ms_weekly_box">
+                <div class="weekly_left">
+                  <span class="w_top_no"> 01 </span>
+                  <div class="w_top_song">
+                    <div class="w_tp_song_img">
+                      <img
+                        src="images/album/zz1.jfif"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="ms_song_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="w_tp_song_name">
+                      <h3><a href="#">Walking Promises</a></h3>
+                      <p>Ava Cornish</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="weekly_right">
+                  <span class="w_song_time">5:10</span>
+                  <span class="ms_more_icon" data-other="1">
+                    <img src="images/svg/more.svg" alt="" />
+                  </span>
+                </div>
+                <ul class="more_option">
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_fav"></span></span
+                      >افزودن به علاقه مندی ها</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_queue"></span></span
+                      >افزودن به آلبوم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_dwn"></span></span
+                      >دانلود</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_playlst"></span></span
+                      >افزودن به لیست
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_share"></span></span
+                      >اشتراک گذاری</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="ms_divider"></div>
+              <div class="ms_weekly_box">
+                <div class="weekly_left">
+                  <span class="w_top_no"> 02 </span>
+                  <div class="w_top_song">
+                    <div class="w_tp_song_img">
+                      <img
+                        src="images/album/zz2.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="ms_song_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="w_tp_song_name">
+                      <h3><a href="#">Walking Promises</a></h3>
+                      <p>Ava Cornish</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="weekly_right">
+                  <span class="w_song_time">5:10</span>
+                  <span class="ms_more_icon" data-other="1">
+                    <img src="images/svg/more.svg" alt="" />
+                  </span>
+                </div>
+                <ul class="more_option">
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_queue"></span></span
+                      >افزودن به آلبوم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_dwn"></span></span
+                      >دانلود</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_playlst"></span></span
+                      >افزودن به لیست
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_share"></span></span
+                      >اشتراک گذاری</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="ms_divider"></div>
+              <div class="ms_weekly_box">
+                <div class="weekly_left">
+                  <span class="w_top_no"> 03 </span>
+                  <div class="w_top_song">
+                    <div class="w_tp_song_img">
+                      <img
+                        src="images/album/zz3.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="ms_song_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="w_tp_song_name">
+                      <h3><a href="#">Gimme Some Courage</a></h3>
+                      <p>Ava Cornish</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="weekly_right">
+                  <span class="w_song_time">5:10</span>
+                  <span class="ms_more_icon" data-other="1">
+                    <img src="images/svg/more.svg" alt="" />
+                  </span>
+                </div>
+                <ul class="more_option">
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_queue"></span></span
+                      >افزودن به آلبوم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_dwn"></span></span
+                      >دانلود</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_playlst"></span></span
+                      >افزودن به لیست
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_share"></span></span
+                      >اشتراک گذاری</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="ms_divider"></div>
+              <div class="ms_weekly_box">
+                <div class="weekly_left">
+                  <span class="w_top_no"> 04 </span>
+                  <div class="w_top_song">
+                    <div class="w_tp_song_img">
+                      <img
+                        src="images/album/zz4.jfif"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="ms_song_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="w_tp_song_name">
+                      <h3><a href="#">Desired Games</a></h3>
+                      <p>Ava Cornish</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="weekly_right">
+                  <span class="w_song_time">5:10</span>
+                  <span class="ms_more_icon" data-other="1">
+                    <img src="images/svg/more.svg" alt="" />
+                  </span>
+                </div>
+                <ul class="more_option">
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_queue"></span></span
+                      >افزودن به آلبوم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_dwn"></span></span
+                      >دانلود</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_playlst"></span></span
+                      >افزودن به لیست
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_share"></span></span
+                      >اشتراک گذاری</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="ms_divider"></div>
+              <div class="ms_weekly_box">
+                <div class="weekly_left">
+                  <span class="w_top_no"> 05 </span>
+                  <div class="w_top_song">
+                    <div class="w_tp_song_img">
+                      <img
+                        src="images/album/zz5.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="ms_song_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="w_tp_song_name">
+                      <h3><a href="#">Dark Alley Acoustic</a></h3>
+                      <p>Ava Cornish</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="weekly_right">
+                  <span class="w_song_time">5:10</span>
+                  <span class="ms_more_icon" data-other="1">
+                    <img src="images/svg/more.svg" alt="" />
+                  </span>
+                </div>
+                <ul class="more_option">
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_queue"></span></span
+                      >افزودن به آلبوم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_dwn"></span></span
+                      >دانلود</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_playlst"></span></span
+                      >افزودن به لیست
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_share"></span></span
+                      >اشتراک گذاری</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 padding_right40">
+              <div class="ms_weekly_box">
+                <div class="weekly_left">
+                  <span class="w_top_no"> 06 </span>
+                  <div class="w_top_song">
+                    <div class="w_tp_song_img">
+                      <img
+                        src="images/album/zz6.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="ms_song_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="w_tp_song_name">
+                      <h3><a href="#">Walking Promises</a></h3>
+                      <p>Ava Cornish</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="weekly_right">
+                  <span class="w_song_time">5:10</span>
+                  <span class="ms_more_icon" data-other="1">
+                    <img src="images/svg/more.svg" alt="" />
+                  </span>
+                </div>
+                <ul class="more_option">
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_queue"></span></span
+                      >افزودن به آلبوم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_dwn"></span></span
+                      >دانلود</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_playlst"></span></span
+                      >افزودن به لیست
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_share"></span></span
+                      >اشتراک گذاری</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="ms_divider"></div>
+              <div class="ms_weekly_box">
+                <div class="weekly_left">
+                  <span class="w_top_no"> 07 </span>
+                  <div class="w_top_song">
+                    <div class="w_tp_song_img">
+                      <img
+                        src="images/album/zz9.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="ms_song_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="w_tp_song_name">
+                      <h3><a href="#">Endless Things</a></h3>
+                      <p>Ava Cornish</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="weekly_right">
+                  <span class="w_song_time">5:10</span>
+                  <span class="ms_more_icon" data-other="1">
+                    <img src="images/svg/more.svg" alt="" />
+                  </span>
+                </div>
+                <ul class="more_option">
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_queue"></span></span
+                      >افزودن به آلبوم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_dwn"></span></span
+                      >دانلود</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_playlst"></span></span
+                      >افزودن به لیست
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_share"></span></span
+                      >اشتراک گذاری</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="ms_divider"></div>
+              <div class="ms_weekly_box ms_active_play">
+                <div class="weekly_left">
+                  <span class="w_top_no"> 08 </span>
+                  <div class="w_top_song">
+                    <div class="w_tp_song_img">
+                      <img
+                        src="images/album/zz1.jfif"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="ms_song_overlay"></div>
+                      <div class="ms_play_icon">
+                        <div class="ms_bars">
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                          <div class="bar"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w_tp_song_name">
+                      <h3><a href="#">Dream Your Moments</a></h3>
+                      <p>Ava Cornish</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="weekly_right">
+                  <span class="w_song_time">5:10</span>
+                  <span class="ms_more_icon" data-other="1">
+                    <img src="images/svg/more.svg" alt="" />
+                  </span>
+                </div>
+                <ul class="more_option">
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_queue"></span></span
+                      >افزودن به آلبوم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_dwn"></span></span
+                      >دانلود</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_playlst"></span></span
+                      >افزودن به لیست
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_share"></span></span
+                      >اشتراک گذاری</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="ms_divider"></div>
+              <div class="ms_weekly_box">
+                <div class="weekly_left">
+                  <span class="w_top_no"> 09 </span>
+                  <div class="w_top_song">
+                    <div class="w_tp_song_img">
+                      <img
+                        src="images/album/zz2.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="ms_song_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="w_tp_song_name">
+                      <h3><a href="#">Until I Met You</a></h3>
+                      <p>Ava Cornish</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="weekly_right">
+                  <span class="w_song_time">5:10</span>
+                  <span class="ms_more_icon" data-other="1">
+                    <img src="images/svg/more.svg" alt="" />
+                  </span>
+                </div>
+                <ul class="more_option">
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_queue"></span></span
+                      >افزودن به آلبوم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_dwn"></span></span
+                      >دانلود</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_playlst"></span></span
+                      >افزودن به لیست
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_share"></span></span
+                      >اشتراک گذاری</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="ms_divider"></div>
+              <div class="ms_weekly_box">
+                <div class="weekly_left">
+                  <span class="w_top_no"> 10 </span>
+                  <div class="w_top_song">
+                    <div class="w_tp_song_img">
+                      <img
+                        src="images/album/z11.jfif"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="ms_song_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="w_tp_song_name">
+                      <h3><a href="#">Gimme Some Courage</a></h3>
+                      <p>Ava Cornish</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="weekly_right">
+                  <span class="w_song_time">5:10</span>
+                  <span class="ms_more_icon" data-other="1">
+                    <img src="images/svg/more.svg" alt="" />
+                  </span>
+                </div>
+                <ul class="more_option">
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_queue"></span></span
+                      >افزودن به آلبوم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_dwn"></span></span
+                      >دانلود</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_playlst"></span></span
+                      >افزودن به لیست
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_share"></span></span
+                      >اشتراک گذاری</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="ms_weekly_box">
+                <div class="weekly_left">
+                  <span class="w_top_no"> 11 </span>
+                  <div class="w_top_song">
+                    <div class="w_tp_song_img">
+                      <img
+                        src="images/album/zz3.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="ms_song_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="w_tp_song_name">
+                      <h3><a href="#">Dark Alley Acoustic</a></h3>
+                      <p>Ava Cornish</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="weekly_right">
+                  <span class="w_song_time">5:10</span>
+                  <span class="ms_more_icon" data-other="1">
+                    <img src="images/svg/more.svg" alt="" />
+                  </span>
+                </div>
+                <ul class="more_option">
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_queue"></span></span
+                      >افزودن به آلبوم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_dwn"></span></span
+                      >دانلود</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_playlst"></span></span
+                      >افزودن به لیست
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_share"></span></span
+                      >اشتراک گذاری</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="ms_divider"></div>
+              <div class="ms_weekly_box">
+                <div class="weekly_left">
+                  <span class="w_top_no"> 12 </span>
+                  <div class="w_top_song">
+                    <div class="w_tp_song_img">
+                      <img
+                        src="images/album/zz4.jfif"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="ms_song_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="w_tp_song_name">
+                      <h3><a href="#">The Heartbeat Stops</a></h3>
+                      <p>Ava Cornish</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="weekly_right">
+                  <span class="w_song_time">5:10</span>
+                  <span class="ms_more_icon" data-other="1">
+                    <img src="images/svg/more.svg" alt="" />
+                  </span>
+                </div>
+                <ul class="more_option">
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_queue"></span></span
+                      >افزودن به آلبوم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_dwn"></span></span
+                      >دانلود</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_playlst"></span></span
+                      >افزودن به لیست
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_share"></span></span
+                      >اشتراک گذاری</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="ms_divider"></div>
+              <div class="ms_weekly_box">
+                <div class="weekly_left">
+                  <span class="w_top_no"> 13 </span>
+                  <div class="w_top_song">
+                    <div class="w_tp_song_img">
+                      <img
+                        src="images/album/zz6.webp"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="ms_song_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/album/zz6.webp" alt="" />
+                      </div>
+                    </div>
+                    <div class="w_tp_song_name">
+                      <h3><a href="#">One More Stranger</a></h3>
+                      <p>Ava Cornish</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="weekly_right">
+                  <span class="w_song_time">5:10</span>
+                  <span class="ms_more_icon" data-other="1">
+                    <img src="images/svg/more.svg" alt="" />
+                  </span>
+                </div>
+                <ul class="more_option">
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_queue"></span></span
+                      >افزودن به آلبوم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_dwn"></span></span
+                      >دانلود</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_playlst"></span></span
+                      >افزودن به لیست
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_share"></span></span
+                      >اشتراک گذاری</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="ms_divider"></div>
+              <div class="ms_weekly_box">
+                <div class="weekly_left">
+                  <span class="w_top_no"> 14 </span>
+                  <div class="w_top_song">
+                    <div class="w_tp_song_img">
+                      <img
+                        src="images/album/zz5.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="ms_song_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="w_tp_song_name">
+                      <h3><a href="#">Walking Promises</a></h3>
+                      <p>Ava Cornish</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="weekly_right">
+                  <span class="w_song_time">5:10</span>
+                  <span class="ms_more_icon" data-other="1">
+                    <img src="images/svg/more.svg" alt="" />
+                  </span>
+                </div>
+                <ul class="more_option">
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_queue"></span></span
+                      >افزودن به آلبوم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_dwn"></span></span
+                      >دانلود</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_playlst"></span></span
+                      >افزودن به لیست
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_share"></span></span
+                      >اشتراک گذاری</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="ms_divider"></div>
+              <div class="ms_weekly_box">
+                <div class="weekly_left">
+                  <span class="w_top_no"> 15 </span>
+                  <div class="w_top_song">
+                    <div class="w_tp_song_img">
+                      <img
+                        src="images/album/zz9.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                      <div class="ms_song_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="w_tp_song_name">
+                      <h3><a href="#">Endless Things</a></h3>
+                      <p>Ava Cornish</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="weekly_right">
+                  <span class="w_song_time">5:10</span>
+                  <span class="ms_more_icon" data-other="1">
+                    <img src="images/svg/more.svg" alt="" />
+                  </span>
+                </div>
+                <ul class="more_option">
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_queue"></span></span
+                      >افزودن به آلبوم</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_dwn"></span></span
+                      >دانلود</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_playlst"></span></span
+                      >افزودن به لیست
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="opt_icon"
+                        ><span class="icon icon_share"></span></span
+                      >اشتراک گذاری</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br /><br />
+
+      <div class="ms_rcnt_slider">
+        <div class="ms_heading" dir="rtl">
+          <h1>بیشترین پخش شده</h1>
+          <span style="float: left" class="veiw_all"
+            ><a href="#">دیدن همه</a></span
+          >
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z11.jfif" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">درد</a></h3>
+                  <p>سارن</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z4.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">لعنت</a></h3>
+                  <p>باران</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z10.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">تقدیر</a></h3>
+                  <p>شادمهر عقیلی</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z9.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">احترام</a></h3>
+                  <p>امیر تتلو</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z3.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">پیرهن</a></h3>
+                  <p>محمد لطفی</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z2.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">بی احساس</a></h3>
+                  <p>شادمهر عقیلی</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z1.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text" dir="rtl">
+                  <h3><a href="#">من باهات قهرم</a></h3>
+                  <p>امیر تتلو</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z7.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">عاشق</a></h3>
+                  <p>سیاوش قمیشی</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z8.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">اون نیومدش</a></h3>
+                  <p>شایان اشراقی</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="ms_rcnt_box">
+                <div class="ms_rcnt_box_img">
+                  <img src="images/album/z5.jpg" alt="" />
+                  <div class="ms_main_overlay">
+                    <div class="ms_box_overlay"></div>
+
+                    <div class="ms_play_icon">
+                      <img src="images/svg/play.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="ms_rcnt_box_text">
+                  <h3><a href="#">دل من هواتو کرده</a></h3>
+                  <p>امیر تتلو</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next slider_nav_next"></div>
+        <div class="swiper-button-prev slider_nav_prev"></div>
+      </div>
+
+      <!----Add Section Start---->
+      <div class="ms_advr_wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <a href="#"
+                ><img src="images/adv.jpg" alt="" class="img-fluid"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ms_releases_wrapper">
+        <!----Top Genres Section Start---->
+        <div class="ms_genres_wrapper">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="ms_heading" dir="rtl">
+                <h1>بهترین سبک ها</h1>
+                <span style="float: left" class="veiw_all"
+                  ><a href="#">دیدن همه</a></span
+                >
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="ms_genres_box">
+                <img src="images/album/z11.jfif" alt="" class="img-fluid" />
+                <div class="ms_main_overlay">
+                  <div class="ms_box_overlay"></div>
+                  <div class="ms_play_icon">
+                    <img src="images/svg/play.svg" alt="" />
+                  </div>
+                  <div class="ovrly_text_div">
+                    <span class="ovrly_text2"><a href="#">موزیکال</a></span>
+                  </div>
+                </div>
+                <div class="ms_box_overlay_on">
+                  <div class="ovrly_text_div">
+                    <span class="ovrly_text2"><a href="#">موزیکال</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="ms_genres_box">
+                    <img src="images/album/z2.jpg" alt="" class="img-fluid" />
+                    <div class="ms_main_overlay">
+                      <div class="ms_box_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                      <div class="ovrly_text_div">
+                        <span class="ovrly_text2"
+                          ><a href="#">پاپ مدرن</a></span
+                        >
+                      </div>
+                    </div>
+                    <div class="ms_box_overlay_on">
+                      <div class="ovrly_text_div">
+                        <span class="ovrly_text2"
+                          ><a href="#">پاپ مدرن</a></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="ms_genres_box">
+                    <img src="images/album/zzz.jpg" alt="" class="img-fluid" />
+                    <div class="ms_main_overlay">
+                      <div class="ms_box_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                      <div class="ovrly_text_div">
+                        <span class="ovrly_text2"
+                          ><a href="#">پاپ کلاسیک</a></span
+                        >
+                      </div>
+                    </div>
+                    <div class="ms_box_overlay_on">
+                      <div class="ovrly_text_div">
+                        <span class="ovrly_text2"
+                          ><a href="#">پاپ کلاسیک</a></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="ms_genres_box">
+                    <img src="images/album/za1.jpg" alt="" class="img-fluid" />
+                    <div class="ms_main_overlay">
+                      <div class="ms_box_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                      <div class="ovrly_text_div">
+                        <span class="ovrly_text2"><a href="#">رپ</a></span>
+                      </div>
+                    </div>
+                    <div class="ms_box_overlay_on">
+                      <div class="ovrly_text_div">
+                        <span class="ovrly_text2"><a href="#">رپ</a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="ms_genres_box">
+                    <img src="images/album/z3.jpg" alt="" class="img-fluid" />
+                    <div class="ms_main_overlay">
+                      <div class="ms_box_overlay"></div>
+                      <div class="ms_play_icon">
+                        <img src="images/svg/play.svg" alt="" />
+                      </div>
+                      <div class="ovrly_text_div">
+                        <span class="ovrly_text2"><a href="#">پاپ</a></span>
+                      </div>
+                    </div>
+                    <div class="ms_box_overlay_on">
+                      <div class="ovrly_text_div">
+                        <span class="ovrly_text2"><a href="#">پاپ</a></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="ms_genres_box">
+                <img src="images/album/z22z.jpg" alt="" class="img-fluid" />
+                <div class="ms_main_overlay">
+                  <div class="ms_box_overlay"></div>
+                  <div class="ms_play_icon">
+                    <img src="images/svg/play.svg" alt="" />
+                  </div>
+                  <div class="ovrly_text_div">
+                    <span class="ovrly_text2"><a href="#">R&B</a></span>
+                  </div>
+                </div>
+                <div class="ms_box_overlay_on">
+                  <div class="ovrly_text_div">
+                    <span class="ovrly_text2"><a href="#">R&B</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----Footer Start---->
+    </div>
+
+    <div class="col-lg-12">
+      <div class="ms_copyright">
+        <div class="footer_border"></div>
+        <p>
+          <a href="#">Ali Vaezi & Farzad.s</a>
+        </p>
+      </div>
+    </div>
+    <!----Register Modal Start---->
+    <!-- Modal -->
+    <div class="ms_register_popup">
+      <div id="myModal" class="modal centered-modal" role="dialog">
+        <div class="modal-dialog register_dialog">
+          <!-- Modal content-->
+          <div class="modal-content" dir="rtl">
+            <button type="button" class="close" data-dismiss="modal">
+              <i class="fa_icon form_close"></i>
+            </button>
+            <div class="modal-body">
+              <div class="ms_register_img">
+                <img src="images/register_img.png" alt="" class="img-fluid" />
+              </div>
+              <div class="ms_register_form">
+                <h2>Z m u s i c</h2>
+                <div class="form-group" dir="rtl">
+                  <input
+                    type="text"
+                    placeholder=" نام خود را وارد کنید..."
+                    class="form-control"
+                  />
+                  <span class="form_icon">
+                    <i class="fa_icon form-user" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder=" ایمیل خود را وارد کنید..."
+                    class="form-control"
+                  />
+                  <span class="form_icon">
+                    <i class="fa_icon form-envelope" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    placeholder=" رمز خود را وارد کنید..."
+                    class="form-control"
+                  />
+                  <span class="form_icon">
+                    <i class="fa_icon form-lock" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    placeholder=" رمز خود را تایید کنید..."
+                    class="form-control"
+                  />
+                  <span class="form_icon">
+                    <i class="fa_icon form-lock" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <a href="#" class="ms_btn">ورود</a><br />
+                <br />
+                <p>
+                  <a
+                    href="#myModal1"
+                    data-toggle="modal"
+                    class="ms_modal hideCurrentModel"
+                    >ثبت نام کنید</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----Login Popup Start---->
+      <div id="myModal1" class="modal centered-modal" role="dialog">
+        <div class="modal-dialog login_dialog">
+          <!-- Modal content-->
+          <div class="modal-content" dir="rtl">
+            <button type="button" class="close" data-dismiss="modal">
+              <i class="fa_icon form_close"></i>
+            </button>
+            <div class="modal-body">
+              <div class="ms_register_img">
+                <img src="images/register_img.png" alt="" class="img-fluid" />
+              </div>
+              <div class="ms_register_form">
+                <h2>Z m u s i c</h2>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder=" ایمیل خود را وارد کنید..."
+                    class="form-control"
+                  />
+                  <span class="form_icon">
+                    <i class="fa_icon form-envelope" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    placeholder=" رمز خود را وارد کنید..."
+                    class="form-control"
+                  />
+                  <span class="form_icon">
+                    <i class="fa_icon form-lock" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="remember_checkbox">
+                  <label
+                    >ذخیره کردن اطلاعات
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <a href="#" class="ms_btn">وارد شوید</a> <br />
+                <br />
+                <p class="bk">
+                  <a
+                    href="#myModal"
+                    data-toggle="modal"
+                    class="ms_modal hideCurrentModel"
+                    >ثبت نام کنید</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----Language Selection Modal---->
+
+    <!----Queue Clear Model ---->
+
+    <!----Queue Save Modal---->
+
+    <!--Main js file Style-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/swiper/js/swiper.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/player/jplayer.playlist.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/player/jquery.jplayer.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/player/audio-player.js"
+    ></script>
+    <script type="text/javascript" src="js/plugins/player/volume.js"></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/nice_select/jquery.nice-select.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/plugins/scroll/jquery.mCustomScrollbar.js"
+    ></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+  </body>
+</html>
